@@ -1,0 +1,10 @@
+name: actions workflow
+
+on: [push, pull_request]
+
+jobs: 
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Simple JS actions
+        uses: actions/hello-world-javascript-action@v1 
